@@ -1,0 +1,22 @@
+{% include header.html %}
+
+<div class="container container-left">
+    <div class="row">
+        <div class="col-md-3 hidden-xs">
+            <div class="sidebar well">
+            <ul>
+            <li><a href="{{ site.baseurl }}/literaryhtml/nobel.html">诺贝尔文学奖</a></li>
+            <li><a href="{{ site.baseurl }}/literaryhtml/kafka.html">卡夫卡文学奖</a></li>
+                <li><a href="{{ site.baseurl }}/about.html">布克奖</a></li>
+                <li><a href="{{ site.baseurl }}/about.html">芥川奖</a></li>
+                <li><a href="{{ site.baseurl }}/about.html">茅盾文学奖</a></li>
+            </ul>
+            </div>
+        </div>
+        <div class="col-md-9">
+            {{ content }}
+        </div>
+    </div>
+</div>
+
+{% include footer.html %}

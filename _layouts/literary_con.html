@@ -1,0 +1,51 @@
+{% include header.html %}
+
+<div class="container container-left">
+    <div class="row">
+        <div class="col-md-3 hidden-xs">
+            <div class="sidebar well">
+                <table class="table table-condensed">
+                  <caption>年份</caption>
+                  <tbody>
+                    <tr>
+                        <td><a href="{{ site.baseurl }}/archive.html">2021</a></td>
+                        <td><a href="{{ site.baseurl}}Nobel2020.md">2020</a></td>
+                      <td>2019</td>
+                        <td>2018</td>
+                    </tr>
+                    <tr>
+                      <td>2017</td>
+                      <td>2016</td>
+                      <td>2015</td>
+                      <td>2014</td>
+                    </tr>
+                    <tr>
+                      <td>2013</td>
+                      <td>2012</td>
+                      <td>2011</td>
+                        <td>2010</td>
+                    </tr>
+                  <tr>
+                      <td>2009</td>
+                      <td>2008</td>
+                      <td>2007</td>
+                      <td>2006</td>
+                  </tr>
+                    <tr>
+                      <td>2005</td>
+                      <td>2004</td>
+                      <td>2003</td>
+                      <td>2002</td>
+                  </tr>
+
+                  </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-md-9">
+            {{ content }}
+        </div>
+    </div>
+</div>
+
+{% include footer.html %}

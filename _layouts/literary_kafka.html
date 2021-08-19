@@ -1,0 +1,49 @@
+{% include header.html %}
+
+<div class="container container-left">
+    <div class="row">
+        <div class="col-md-3 hidden-xs">
+            <div class="sidebar well">
+                <table class="table table-condensed">
+                  <caption>年份</caption>
+                  <tbody>
+                    <tr>
+                        <td class="col-md-1">2020</td>
+                      <td class="col-md-1">2019</td>
+                      <td class="col-md-1">2018</td>
+                      <td class="col-md-1">2017</td>
+                      <td>2016</td>
+                    </tr>
+                    <tr>
+                        <td>2015</td>
+                      <td>2014</td>
+                      <td>2013</td>
+                      <td>2012</td>
+                        <td>2011</td>
+                    </tr>
+                  <tr>
+                      <td>2010</td>
+                      <td>2009</td>
+                      <td>2008</td>
+                      <td>2007</td>
+                      <td><a href="{{ site.baseurl}}/literaryhtml/kafka/kafka2006.html">2006</a></td>
+                  </tr>
+                    <tr>
+                        <td class="col-md-1">2005</td>
+                      <td>2004</td>
+                      <td>2003</td>
+                      <td class="col-md-1">2002</td>
+                      <td>2001</td>
+                  </tr>
+
+                  </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-md-9">
+            {{ content }}
+        </div>
+    </div>
+</div>
+
+{% include footer.html %}

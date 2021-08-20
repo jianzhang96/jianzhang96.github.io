@@ -1,5 +1,22 @@
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('https://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.eot');
+  src: url('https://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('https://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.woff') format('woff'), url('https://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('https://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+.has-search .form-control-feedback {
+    right: initial;
+    left: 0;
+    color: #ccc;
+}
+
+.has-search .form-control {
+    padding-right: 12px;
+    padding-left: 34px;
+}
+
+
 body {
-    padding-top: 60px;
+    /*padding-top: 60px;*/
     padding-bottom: 60px;
 }
 
@@ -16,8 +33,8 @@ body {
 }
 
 .sidebar h1 {
-    color: #ee4444;
-    font-size: 1.3em;
+    /*color: #ee4444;*/
+    font-size: 1.2em;
 }
 
 .sidebar a {
@@ -34,11 +51,11 @@ body {
 }
 
 .container-left {
-    margin: 0;
+    margin: 15px;
 }
 
 .well h1 {
-    color: #ee4444;
+    /*color: #ee4444;*/
     font-size: 1.3em;
 }
 
@@ -54,3 +71,48 @@ body {
 /*    display: block;*/
 /*    margin-top: 0;*/
 /* }*/
+/*自定义的样式*/
+.myblock {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border: 1px solid #e3e3e3;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.myblock blockquote {
+  border-color: #ddd;
+  border-color: rgba(0, 0, 0, 0.15);
+}
+
+.myblock h1 {
+    font-size: 1.3em;
+}
+
+.card {
+  min-height: 20px;
+  padding-left: 19px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  margin-bottom: 15px;
+  background-color: #f5f5d5;
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.card2 {
+  min-height: 20px;
+  padding-left: 19px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  margin-bottom: 15px;
+  background-color: #f1f8ff;
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}

@@ -1,9 +1,13 @@
 {% include header.html %}
 
-<div class="container container-left">
+<div class="container container-right">
     <div class="row">
+
+        <div class="col-md-9">
+            {{ content }}
+        </div>
         <div class="col-md-3 hidden-xs">
-            <div class="sidebar well">
+            <div class="sidebar myblock">
                 <table class="table table-condensed">
                   <caption>年份</caption>
                   <tbody>
@@ -40,7 +44,7 @@
                       <td>2003</td>
                       <td>2002</td>
                       <td class="col-md-1">2001</td>
-                      <td>2000</td>
+                        <td><a href="{{ site.baseurl}}/literaryhtml/nobel/nobel2000.html">2000</a></td>
                   </tr>
 
                   </tbody>
@@ -70,9 +74,6 @@
                   </tbody>
                 </table>
             </div>
-        </div>
-        <div class="col-md-9">
-            {{ content }}
         </div>
     </div>
 </div>

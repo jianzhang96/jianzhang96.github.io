@@ -1,16 +1,30 @@
-<div class="sidebar card2">
-{{ site.description }}
-</div>
+<!--<div class=" well well-sm">-->
+<!--{{ site.description }}-->
+<!--</div>-->
 
-<div class="sidebar card2">
-    <h1>最近文章</h1>
+<div class=" sidepanel">
+  <div class="panel-heading">
+    <h3 class="panel-title">最近文章</h3>
+  </div>
+  <div class="panel-body">
     <ul>
         {% for post in site.posts limit:5 %}
           <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
         {% endfor %}
     </ul>
+  </div>
 </div>
 
-<div class="sidebar card">
-{% include links-list.html %}
+<!--<div class="sidebar card">-->
+<!--{% include links-list.html %}-->
+<!--</div>-->
+
+<!--<div class="panel panel-default">-->
+<div class="sidepanel">
+  <div class="panel-heading">
+    <h3 class="panel-title">其他</h3>
+  </div>
+  <div class="panel-body">
+      {% include links-list.html %}
+  </div>
 </div>

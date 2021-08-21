@@ -5,16 +5,23 @@
         <div class="col-md-9">
             {{ content }}
         </div>
-        <div class="col-md-3 hidden-xs">
-            <div class="sidebar myblock">
-            <ul>
-            <li><a href="{{ site.baseurl }}/literaryhtml/nobel.html">诺贝尔文学奖</a></li>
-            <li><a href="{{ site.baseurl }}/literaryhtml/kafka.html">卡夫卡文学奖</a></li>
-                <li><a href="{{ site.baseurl }}/literaryhtml/booker.html">布克奖</a></li>
-                <li><a href="{{ site.baseurl }}/about.html">芥川奖</a></li>
-                <li><a href="{{ site.baseurl }}/about.html">茅盾文学奖</a></li>
-            </ul>
-            </div>
+        <div class="col-md-3 ">
+            <div class="panel panel-default ">
+          <div class="panel-heading ">
+              <h3 class="panel-title ">奖项</h3>
+          </div>
+<!--          <div class="panel-body">-->
+<!--            <p>...</p>-->
+<!--          </div>-->
+          <!-- List group -->
+          <div class="list-group">
+            <a href="{{ site.baseurl }}/literaryhtml/nobel.html" class="list-group-item">诺贝尔文学奖</a>
+            <a href="{{ site.baseurl }}/literaryhtml/kafka.html" class="list-group-item">卡夫卡文学奖</a>
+            <a href="{{ site.baseurl }}/literaryhtml/booker.html" class="list-group-item">布克奖</a>
+            <a href="{{ site.baseurl }}/about.html" class="list-group-item">芥川奖</a>
+            <a href="{{ site.baseurl }}/about.html" class="list-group-item">茅盾文学奖</a>
+          </div>
+        </div>
         </div>
     </div>
 </div>

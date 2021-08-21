@@ -17,7 +17,7 @@
 
 <div class="container-fluid">
     <div class="row-fluid">
-        <div class="navbar navbar-default  navbar-static-top " role="navigation">
+        <div class="navbar   navbar-default  navbar-static-top headNene" role="navigation">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                   <span class="sr-only">Toggle navigation</span>
@@ -29,10 +29,10 @@
               </div>
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class=""><a href="{{ site.baseurl }}/"><b>人工智能</b></a></li>
-                    <li class=""><a href="{{ site.baseurl }}/"><b>生活</b></a></li>
+                    <li class=""><a href="{{ site.baseurl }}/ai.html"><b>人工智能</b></a></li>
+                    <li class=""><a href="{{ site.baseurl }}/life.html"><b>生活</b></a></li>
                     <li class=""><a href="{{ site.baseurl }}/literary_award.html"><b>文学奖</b></a></li>
-                    <li class="active visible-xs-block"><a href="{{ site.baseurl }}/links.html"><b>其他</b></a></li>
+                    <li class=" visible-xs-block"><a href="{{ site.baseurl }}/links.html"><b>其他</b></a></li>
 <!--                    <li class="active"><a href="{{ site.baseurl }}/feed.xml">RSS</a></li>-->
                     {% if site.gitlab != '' %}
                       <li class="active"><a href="https://gitlab.com/{{ site.gitlab }}">Gitlab</a></li>
@@ -41,18 +41,28 @@
                       <li class="active"><a href="https://github.com/{{ site.github }}">Github</a></li>
                     {% endif %}
                 </ul>
-                  <form class="navbar-form pull-right" role="search">
-                    <div class="form-group  has-feedback has-search">
-                    <span class="glyphicon glyphicon-search form-control-feedback"></span>
-                    <input type="text" class="form-control" >
-                    </div>
-                </form>
-
+<!--                  <form class="navbar-form pull-right"  role="search">-->
+<!--                    <div class="form-group  has-feedback has-search">-->
+<!--                    <span class="glyphicon glyphicon-search form-control-feedback"></span>-->
+<!--                    <input type="text" class="form-control" id="search-input">-->
+<!--                    </div>-->
+<!--                </form>-->
+                <div class="navbar-form "   id="search-container">
+                  <input type="text" class="form-control" id="search-input" placeholder="search...">
+                  <ul id="results-container"></ul>
+                </div>
               </div>
-
+        </div>
         </div>
 </div>
 
+<script src="{{ site.baseurl }}/js/simple-jekyll-search.min.js" type="text/javascript"></script>
 
-<!--navbar-fixed-top-->
-<!--navbar-inverse-->
+<!-- Configuration -->
+<script>
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('results-container'),
+  json: '/search.json'
+})
+</script>

@@ -4,15 +4,15 @@
   src: url('https://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('https://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.woff') format('woff'), url('https://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('https://netdna.bootstrapcdn.com/bootstrap/3.0.0/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
 }
 .has-search .form-control-feedback {
-    right: initial;
-    left: 0;
+    /*right: initial;*/
+    /*left: 0;*/
     color: #ccc;
 }
 
-.has-search .form-control {
-    padding-right: 12px;
-    padding-left: 34px;
-}
+/*.has-search .form-control {*/
+/*    padding-right: 12px;*/
+/*    padding-left: 34px;*/
+/*}*/
 
 
 body {
@@ -20,9 +20,6 @@ body {
     padding-bottom: 60px;
 }
 
-.copyright {
-    color: #ffffff;
-}
 
 .footer {
     font-size:small;
@@ -53,7 +50,7 @@ body {
 }
 
 .container-left {
-    margin: 15px;
+    margin-left: 15px;
 }
 
 .well h1 {
@@ -94,10 +91,7 @@ body {
     font-size: 1.3em;
 }
 
-/*.panel-default > .panel-heading-custom {*/
-/*    background-image: linear-gradient(#f2f3f3, #f4f5f6);*/
-/*    !*color: #fff;*!*/
-/*}*/
+
 .sidepanel {
     /*font-size: 12px;*/
     margin-bottom: 15px;

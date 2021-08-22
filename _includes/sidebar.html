@@ -6,8 +6,8 @@
   <div class="panel-heading">
     <h3 class="panel-title">最近文章</h3>
   </div>
-  <div class="panel-body">
-    <ul>
+  <div class="panel-body " style="padding-bottom: 0px">
+    <ul class="list-unstyled">
         {% for post in site.posts limit:5 %}
           <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
         {% endfor %}
@@ -24,7 +24,7 @@
   <div class="panel-heading">
     <h3 class="panel-title">其他</h3>
   </div>
-  <div class="panel-body">
+  <div class="panel-body" style="padding-bottom: 0px">
       {% include links-list.html %}
   </div>
 </div>

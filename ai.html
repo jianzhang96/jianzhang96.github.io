@@ -2,10 +2,11 @@
 layout: default_ai
 ---
 
-{% for post in site.posts limit:1 %}
+{% for post in site.categories.ai limit:1 %}
 <div class="article">
     <div class="myblock">
-        <h1><a href="{{ site.baseurl}}{{ post.url }}">{{ post.date | date: "%b %-d, %Y" }} - {{ post.title }}</a></h1>
+        <h1 style="text-align: center">{{ post.title }}</h1>
+        <p style="text-align: center; color: #888888">{{ post.date | date: "%Y年%m月%d日" }}</p>
         {% if site.comments and post.comments %}
             {% if site.disqus != '' %}
             <p class="author"><a href="{{ site.baseurl }}{{ post.url }}/#disqus_thread" data-disqus-identifier="{{ post.url | slugify }}">Comments</a></p>

@@ -129,3 +129,30 @@ body {
     background: -ms-linear-gradient(top, #FCFCFC, #FAFAF9);
     background: -o-linear-gradient(top, #FCFCFC, #FAFAF9);
 }
+
+.gt-container .gt-btn-preview {
+  background-color: #fff;
+  color: #000000;
+}
+.gt-container .gt-btn-preview:hover {
+  background-color: #fff;
+  border-color: #000000;
+}
+
+/*.gt-container .gt-btn-public {*/
+/*    background-color: #10D07A;*/
+/*    border: 1px solid #10D07A;*/
+/*}*/
+
+.gt-container .gt-btn-public:hover {
+  background-color: #81a6ed;
+  border-color: #81a6ed;
+}
+
+.gt-container .gt-header-textarea {
+    background-color: #ffffff;
+}
+
+.gt-container .gt-header-preview {
+    background-color: #ffffff;
+}

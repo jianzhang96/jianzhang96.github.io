@@ -1,7 +1,7 @@
 ---
 layout: ai_post
 title: "示例文章2"
-date: 2013-05-22 16:25:06 -0700
+date: 2021-05-22 16:25:06 -0700
 comments: true
 category: ai
 ---

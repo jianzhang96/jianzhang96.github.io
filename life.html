@@ -5,7 +5,7 @@ layout: default
 <div class="myblock">
 <!--    <h1 style="text-align: center">类别所有文章</h1>-->
 {%for post in site.categories.life %}
-    <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.date | date: "%Y年%m月%d日" }} - {{ post.title }}</a></li>
+    <li>{{ post.date | date: "%Y年%m月%d日" }} - <a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 </ul>
 </div>

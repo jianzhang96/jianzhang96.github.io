@@ -5,7 +5,7 @@ layout: default
 {% for post in paginator.posts %}
 <div class="article">
     <div class="myblock">
-        <h1 style="text-align: center">{{ post.title }}</h1>
+        <h1 style="text-align: center"><a href="{{ site.baseurl}}{{ page.url }}" style="color:inherit;">{{ post.title }}</a></h1>
         <p style="text-align: center; color: #888888">{{ post.date | date: "%Y年%m月%d日" }}</p>
         {% if site.comments and post.comments %}
             {% if site.disqus != '' %}

@@ -109,10 +109,10 @@
   border-color: #000000;
 }
 
-/*.gt-container .gt-btn-public {*/
-/*    background-color: #10D07A;*/
-/*     #10D07A;*/
-/*}*/
+.gt-container .gt-btn-public {
+    background-color: #10D07A;
+    border: 1px solid #10D07A;
+}
 
 .gt-container .gt-btn-public:hover {
   background-color: #81a6ed;
@@ -120,15 +120,19 @@
 }
 
 .gt-container .gt-header-textarea {
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.1);
     background-color: #ffffff;
 }
 
 .gt-container .gt-header-textarea:hover {
-  background-color: #ffffff;
+  background-color: #e3e3e3;
 }
 
 .gt-container .gt-header-preview {
-    background-color: #ffffff;
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
 }
 
 .gt-container .gt-comment-content {
@@ -142,8 +146,12 @@
 
 .gt-container .gt-comment-admin .gt-comment-content {
     border: 1px solid #CFD8DC;
-    border-radius: 0;
+    border-radius: 5px;
     background-color: #ffffff;
+}
+
+.gt-container .gt-comment-body {
+    /*color: #000000;*/
 }
 
 .gt-container .gt-comment-username {

@@ -4,6 +4,7 @@
     <div class="row">
         <div class="col-md-3 hidden-xs">
         {% include ai_sidebar.html %}
+<!--            <div  class="panel panel-default" id="toc"  ></div>-->
         </div>
         <div class="col-md-9">
           <div class="article">
@@ -53,6 +54,11 @@
 
 {% include disqus-comments.html %}
 {% include footer.html %}
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#toc').toc();
+}); </script>
 
 <style>
 .gt-ico-text {

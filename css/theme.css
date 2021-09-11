@@ -70,7 +70,10 @@ body {
 /*自定义的样式*/
 .myblock {
   min-height: 20px;
-  padding: 19px;
+  padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   margin-bottom: 20px;
   background-color: #ffffff;
   border: 1px solid #e3e3e3;

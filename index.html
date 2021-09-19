@@ -17,7 +17,9 @@ layout: default
         <div class="content">
 <!--            {{ post.content }}-->
             {{ post.excerpt }}
-            <a class="btn btn-default" href="{{ site.baseurl}}{{ post.url }}" style="text-align:center;">阅读全文>></a>
+            <div style="text-align:center;">
+            <a class="btn btn-default" href="{{ site.baseurl}}{{ post.url }}" >阅读全文»</a>
+            </div>
 <!--            {{ post.content  | | split:'&lt;!&ndash; more &ndash;&gt;' | first }}-->
         </div>
     </div>

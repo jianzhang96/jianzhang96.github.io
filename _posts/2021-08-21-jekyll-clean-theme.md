@@ -27,7 +27,9 @@ and you can do the same thing for any other sections added to the sidebar.
 
 Don't forget to occassionally merge against my upstream repository so you can get
 the latest changes. Pull requests are encouraged and accepted!
+
 <!-- more -->
+
 Installation
 ============
 

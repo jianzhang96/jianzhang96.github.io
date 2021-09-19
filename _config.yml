@@ -33,7 +33,7 @@ disqus: '' #httpsjianzhang96githubio
 permalink: /:year/:month/:title
 paginate: 3
 
-#excerpt_separator:  '<!-- more -->'
+excerpt_separator: <!--more-->
 
 highlighter: rouge
 markdown: kramdown

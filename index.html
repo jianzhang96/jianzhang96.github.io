@@ -15,7 +15,8 @@ layout: default
             {% endif %}
         {% endif %}
         <div class="content">
-            {{ post.content }}
+<!--            {{ post.content }}-->
+            {{ post.excerpt }}
 <!--            {{ post.content  | | split:'&lt;!&ndash; more &ndash;&gt;' | first }}-->
         </div>
     </div>
@@ -27,11 +28,11 @@ layout: default
       {% if paginator.previous_page == 1 %}
         <a class="btn btn-default" href="{{ site.baseurl}}/index.html" class="previous">Newer</a>
       {% else %}
-        <a class="btn btn-default" href="{{ site.baseurl}}/page{{ paginator.previous_page }}" class="previous">Newer</a>
+        <a class="btn btn-default" href="{{ site.baseurl}}/page{{ paginator.previous_page }}" class="previous">上一页</a>
       {% endif %}
   {% endif %}
   <span class="page_number ">页: {{ paginator.page }} / {{ paginator.total_pages }}</span>
   {% if paginator.next_page %}
-    <a class="btn btn-default" href="{{ site.baseurl}}/page{{ paginator.next_page }}" class="next">Older</a>
+    <a class="btn btn-default" href="{{ site.baseurl}}/page{{ paginator.next_page }}" class="next">下一页</a>
   {% endif %}
 </div>

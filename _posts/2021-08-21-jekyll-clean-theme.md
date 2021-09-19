@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "示例文章Jekyll Clean Theme"
+title: "示例文章 Jekyll Clean Theme"
 date: 2021-08-21 16:25:06 -0700
 comments: false
 category: life

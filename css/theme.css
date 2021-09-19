@@ -87,7 +87,7 @@ body {
 }
 
 .myblock h1 {
-    font-size: 1.3em;
+    font-size: 1.4em;
 }
 
 
@@ -149,7 +149,18 @@ body {
   border-radius: 15px;
 }
 
-
+.post_title {
+    /*font-size: 1.5em;*/
+    /*font-weight: 400;*/
+    /*font-weight: normal;*/
+    /*margin: initial;*/
+    text-align: center;
+    font-family: 'PingFang SC', "Lato", "PingFang SC", "Microsoft YaHei", sans-serif;
+    color: #555;
+    font-size: 1.4em;
+    /*overflow-wrap: break-word;*/
+    /*word-wrap: break-word;*/
+}
 /*深色模式*/
 /*.darkmode-layer, .darkmode-toggle {*/
 /*z-index: 500;*/

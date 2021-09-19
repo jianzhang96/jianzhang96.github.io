@@ -16,7 +16,7 @@ layout: default
         {% endif %}
         <div class="content">
 <!--            {{ post.content }}-->
-            {{ post.excerpt  }}
+            {{ post.content  | | split:'<!--more-->' | first }}
         </div>
     </div>
 </div>

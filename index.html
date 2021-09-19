@@ -6,7 +6,7 @@ layout: default
 <div class="article">
     <div class="myblock">
         <h1 style="text-align: center"><a href="{{ site.baseurl}}{{ post.url }}" style="color:inherit;">{{ post.title }}</a></h1>
-        <p style="text-align: center; color: #888888">{{ post.date | date: "%Y年%m月%d日" }}</p>
+        <p style="text-align: center; color: #888888">{{ post.date | date: "%Y-%m-%d" }}</p>
         {% if site.comments and post.comments %}
             {% if site.disqus != '' %}
 <!--            <p class="author"><a href="{{ site.baseurl }}{{ post.url }}/#disqus_thread" data-disqus-identifier="{{ post.url | slugify }}">Comments</a></p>-->
@@ -15,7 +15,8 @@ layout: default
             {% endif %}
         {% endif %}
         <div class="content">
-            {{ post.content }}
+<!--            {{ post.content }}-->
+            {{ post.excerpt | strip_html }}
         </div>
     </div>
 </div>

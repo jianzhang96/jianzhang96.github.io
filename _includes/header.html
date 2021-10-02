@@ -53,7 +53,7 @@
                 <div class="navbar-form  navbar-right"   id="search-container">
 <!--                    <span class="glyphicon glyphicon-search " style="color: #ccc"></span>-->
                   <input type="text"  data-toggle="dropdown"  class="form-control " id="search-input" >
-                  <ul class="dropdown-menu" aria-labelledby="dLabel" id="results-container" style="margin-right:  15px;"></ul>
+                  <ul class="dropdown-menu" aria-labelledby="dLabel" id="results-container" style="margin-right:  15px; min-width:200px;"></ul>
                 </div>
 
               </div>
@@ -71,7 +71,7 @@ SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('results-container'),
   json: '/search.json',
-    noResultsText: '没有搜索到文章',
+    noResultsText: '  没有搜索到文章',
     limit: 20,
     fuzzy: false
 })

@@ -5,7 +5,7 @@ layout: default_ai
 {% for post in site.categories.ai limit:1 %}
 <div class="article">
     <div class="myblock">
-        <h1 style="text-align: center">{{ post.title }}</h1>
+        <h2 class="post_title ">{{ post.title }}</h2>
         <p style="text-align: center; color: #888888">{{ post.date | date: "%Y年%m月%d日" }}</p>
         {% if site.comments and post.comments %}
             {% if site.disqus != '' %}
